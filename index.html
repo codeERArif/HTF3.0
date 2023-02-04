@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>patient  report </title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <div class="wrapper">
+    <div class="title">
+      patient report 
+    </div>
+    <div class="form">
+      <form action="" id="detailForm">
+        <div class="inputfield">
+          <label>doctor name</label>
+          <input type="text" class="input" id="docName">
+       </div>  
+        <div class="inputfield">
+          <label>patient name</label>
+          <input type="text" class="input" id="patientName">
+        </div>  
+        <div class="inputfield">
+          <label>date</label>
+          <input type="datetime-local" class="input" id="date">
+        </div>  
+        <div class="inputfield">
+          <label>cure disease</label>
+          <input type="text" class="input" id="cureDisease">
+        </div> 
+        <div class="inputfield">
+          <label>Gender</label>
+          <div class="custom_select">
+            <select>
+              <option value="" id="select">Select</option>
+              <option value="male" id="male">Male</option>
+              <option value="female" id="female">Female</option>
+            </select>
+          </div>
+        </div> 
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="text" class="input" id="emailAddres">
+        </div> 
+        <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="text" class="input" id="phoneNumber">
+        </div> 
+        <div class="inputfield">
+          <label>Address</label>
+          <textarea class="textarea" id="address"></textarea>
+        </div> 
+        
+        <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>Agreed to terms and conditions</p>
+        </div> 
+        
+        <div class="inputfield">
+          <label for="">Add your report</label>
+          <input type="file" name="upload your report" id="uploadReport">
+        </div>
+        <div class="inputfield">
+          <input type="submit" value="Register" class="btn">
+        </div>
+      </div>
+    </form>
+  </div>	
+	
+  
+
+
+  <script src="/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+</body>
+</html>
